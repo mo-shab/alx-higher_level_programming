@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    for row in matrix:
-        row_str = " ".join(map(str, row))
-        print(row_str)
+    if matrix == [[]]:
+        print()
+    else:
+        for raw in matrix:
+            for col in raw:
+                print('{:d}'.format(col), end=' '
+                      if col != raw[-1] else '\n')
