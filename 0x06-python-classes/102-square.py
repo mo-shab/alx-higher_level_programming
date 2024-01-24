@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-
+"""Define a Class Square."""
 
 class Square:
-    """
-    class square that has attributes:
+    """ square Class that have attributes:
         size
     some attributes are protected from input.
     """
     def __init__(self, size=0):
-        """
-        initialization function for our square clasee
+        """ Initialization function for the square class
         """
         if self.__validate_size(size):
             self.__size = size
