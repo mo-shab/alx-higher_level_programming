@@ -39,3 +39,13 @@ class Rectangle():
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
+
+    def area(self):
+        """ gets the area of rectangle instance """
+        return (self.width * self.height)
+
+    def perimeter(self):
+        """ gets the perimeter of a rectangle instance """
+        if self.width == 0 or self.height == 0:
+            return 0
+        return ((2 * self.width) + (2 * self.height))
