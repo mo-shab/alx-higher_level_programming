@@ -14,5 +14,8 @@ def new_in_list(my_list, idx, element):
         return new_list
     else:
         return my_list
+<<<<<<< HEAD
 
 >>>>>>> dbbedb6bd943bda6c6d41bd1160872f88f1c418f
+=======
+>>>>>>> 5300af32c18f24d0e2bc9eefe945b514350de2a7
