@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Rectangle class"""
 
 
-class Rectangle:
+class Rectangle():
     """Rectangle Class"""
 
     def __init__(self, width = 0, height = 0):
+        """ instantiation method for object creation
+        """
         self._width = width
         self.height = height
 
