@@ -8,10 +8,6 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         '''constrector'''
         super().__init__(id)
-        self.__width = None
-        self.__height = None
-        self.__x = None
-        self.__y = None
         self.width = width
         self.height = height
         self.x = x
