@@ -102,5 +102,4 @@ class Rectangle(Base):
                 self.y = args[4]
         elif kwargs and len(kwargs) > 0:
             for key, value in kwargs.items():
-                setattr(self, key, value
-
+                setattr(self, key, value)
