@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-"""Create Class Rectangle"""
+'''Create Class Rectangle'''
 from models.base import Base
-"""import Base from Base modele"""
+'''import Base from Base modele'''
 
 
 class Rectangle(Base):
-    """Define Class Rectangle that inhertance from Base"""
+    '''Define Class Rectangle that inhertance from Base'''
     def __init__(self, width, height, x=0, y=0, id=None):
+        '''constrector'''
         super().__init__(id)
         self.__width = None
         self.__height = None
@@ -19,6 +20,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        '''Width of this rectangle.'''
         return self.__width
 
     @width.setter
@@ -32,6 +34,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        '''Height of this rectangle.'''
         return self.__height
 
     @height.setter
@@ -45,6 +48,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        '''x of this rectangle.'''
         return self.__x
 
     @x.setter
@@ -58,6 +62,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        '''y of this rectangle.'''
         return self.__y
 
     @y.setter
@@ -70,9 +75,11 @@ class Rectangle(Base):
             self.__y = value
 
     def area(self):
+        '''Computes area of this rectangle.'''
         return self.width * self.height
 
-    def display(self): 
+    def display(self):
+        '''Prints string representation of this rectangle.''' 
         for _ in range(self.y):
             print()
         for _ in range(self.height):
@@ -82,9 +89,11 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        '''Returns string info about this rectangle.'''
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
+        '''Update the args of the rectangle'''
         if args and len(args) > 0:
             if len(args) >= 1:
                 self.id = args[0]
