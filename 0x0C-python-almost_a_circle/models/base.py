@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Create Base function"""
+
+
 class Base:
     """Base Function"""
 
